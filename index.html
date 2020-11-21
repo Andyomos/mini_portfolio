@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>AndoStudio | Change Background Color</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-wrapper teal lighten-2">
+            <a href="index.html" class="brand-logo logo-magins">AndoStudio</a>
+    
+            <a style="cursor: pointer;" data-target="mobile-demo" class="sidenav-trigger" onclick="navMobile()"><i class="material-icons">menu</i></a>
+    
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="index.html">Home </a>
+    
+                </li>
+                <li class="logo-magin"><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" id="mobileDisplay">
+        <ul >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        
+        </ul>
+    </div>
+    
+    <main class="container" id="container">
+        <div class="card-panel white-text teal lighten-2">
+            <blockquote>
+            <h2 id="containers">backgroun color : 
+                <span id="display">
+                    #F1f5f8
+                </span>
+            </h2>
+            </blockquote>
+        </div>
+        <div class="container center-align">
+            <a class="waves-effect waves-light btn white black-text" onclick="hexControl()" >
+
+                <i class="material-icons right">
+                    cloud
+                </i>
+
+                Get color code
+            </a>
+        </div>
+    </main>
+    <footer class="page-footer teal lighten-2">
+        <div class="container center">
+            AndoStudio<sup>©</sup> 2020
+        </div>
+    
+    </footer>
+        
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/** @format */
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 1.3rem;
+  letter-spacing: 1.6px;
+
+  font-family: "roboto", sans-serif;
+}
+
+.logo-magin {
+  padding-right: 20px;
+}
+.logo-magins {
+  margin-left: 20px;
+}
+
+/* Sencond NavBar Start */
+#mobileDisplay {
+  display: none;
+  width: 250px;
+  margin: 0px;
+  padding: 15px;
+
+  background-color: rgb(77, 182, 172);
+  transition: 2s ease-out;
+}
+
+#mobileDisplay:hover {
+  animation: expands 2s linear 1ms;
+}
+
+#mobileDisplay li {
+  margin: 15px auto;
+  padding: 10px;
+}
+
+#mobileDisplay a {
+  color: rgba(255, 255, 255, 0.897);
+  font-size: 1.8rem;
+}
+
+@keyframes expands {
+  from {
+    background: rgba(77, 182, 172, 0.74);
+    transform: translateX(0);
+  }
+  to {
+    background: rgba(77, 182, 172, 0.486);
+    transform: translateX(10px);
+  }
+}
+
+/* Sencond NavBar End */
+
+/* Home Page Board Start */
+#container {
+  min-height: 100vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#container h2 {
+  text-transform: capitalize;
+}
+/* Home Page Board End */
+
+/* Footer NavBar Start */
+footer {
+  margin-top: 1rem;
+  padding: 1.6rem;
+}
+/* Footer NavBar End */
+
+/* My Slide Design Start */
+.imagesContainer {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("bacimg/background.png") center/cover no-repeat;
+}
+
+.images {
+  flex: 0 0 80%;
+  min-height: 65vh;
+  background: url("img/Andy-1.jpg") center/cover no-repeat;
+  box-shadow: 5px 10px black;
+  border-radius: 15px;
+  position: relative;
+}
+
+.btns {
+  display: inline-block;
+  color: black;
+  background: rgba(255, 255, 255, 0.897);
+  border: 3px solid rgb(77, 182, 172);
+  font-size: 1.5em;
+  padding: 0.5rem;
+  border-radius: 20px;
+  box-shadow: 2px 5px black;
+  outline: none;
+}
+
+.prevBtn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.nextBtn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.btns:active {
+  background: rgba(255, 255, 255, 0.897);
+  box-shadow: 1px 1px rgba(255, 255, 255, 0.897);
+}
+
+.btns:hover {
+  background: rgb(77, 182, 172);
+  color: rgba(255, 255, 255, 0.897);
+}
+/* My Slide Design End */
+
+/* My Experience Design Start */
+.level {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* My Experience Design End */

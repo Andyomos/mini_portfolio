@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>AndoStudio | Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper teal lighten-2">
+            <a href="index.html" class="brand-logo logo-magins">AndoStudio</a>
+    
+            <a style="cursor: pointer;"  data-target="mobile-demo" class="sidenav-trigger" onclick="navMobile()"><i
+                    class="material-icons">menu</i></a>
+    
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="index.html">Home </a>
+    
+                </li>
+                <li class="logo-magin"><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" id="mobileDisplay">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+    
+        </ul>
+    </div>
+    
+    <!-- Portfolio -->
+    <div class="container s12" id="container">
+        <div class="col s6">
+            <h1>Portfolio</h1>
+            <blockquote><h4>Get To Know Me!</h4></blockquote>
+            <p>Thank you for taking the time to check out my mini portfolio website, main website coming soon.</p>
+            <p>My names are Anderson O. Omoragbon, I recently started learning web programming and I loved it. Within five months, I was writing code that you can view on my GitHub page <a href="https://github.com/Andyomos" target="_blank">Link</a>. I will love to learn more if an oppotunity is given to me.  </p>
+            <a class="btn" 
+                onclick="M.toast({html: 'Thak you for Visiting', completeCallback: function(){alert('Enjoy your stay!')}})">Welcome!
+            </a>
+        </div>
+
+        <!-- Me & Family -->
+        <div class="row">
+            <div class="col s12 m6">
+                <h2>Pictures of me</h2>
+                <blockquote><h5>My Picture Slide</h5></blockquote>
+                <div class="imagesContainer">
+                    <div class="images">
+                        <button type="button" class="btns prevBtn" onclick="prevSlide()">Prev</button>
+                        <button type="button" class="btns nextBtn" onclick="nextSlide()">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <h2>Why Hire Me!</h2>
+                <blockquote><h5>My Job ethics</h5></blockquote>
+                <div class="level">
+                    <p>With dedication and the williness to learn, are my strength. I have been able to practice on my own with fourty hours a week job and six kids at home. Today, I would say I'm a moderate web developer within five months. 
+                    </p>
+                    <p>I want the opportunity to improve more  on my new career paths.  
+                     At my present job, I work as a pasteurizer with Agropur Diary Corp. base in Edonton AB, Canada.</p>
+                    <p> My attendance to work and understanding of my job discription is something that speaks for itself and verifiable.
+                    </p>
+                    
+                    
+                </div>
+               
+            </div>
+        </div>
+
+        <!-- My Work -->
+        <div class="col s6">
+            <h2>My Work</h2>
+            <blockquote><h5>Some Of My Projects</h5></blockquote>
+            <p>Some of my projects was built using HTML, CSS Javasript, Node.js, React.js and Materil-UI. I am very familiar with PHP and Python Django as well. <small style="color: red">Please, find my projects at <a href="https://github.com/Andyomos" target="_blank">GitHub.com</a></small></p>
+            <a class="btn"
+                onclick="M.toast({html: 'Hope to see you soon!', completeCallback: function(){alert('Hope You Enjoyed your stay!')}})">GoodBye!
+            </a>
+        </div>
+       
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer teal lighten-2">
+        <div class="container center">
+            AndoStudio<sup>©</sup> 2020 
+        </div>
+       
+    </footer>
+
+    <script src="main.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+</body>
+</html>
