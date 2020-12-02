@@ -33,9 +33,11 @@
     
         </ul>
     </div>
-    
+    <a class="btn"
+        onclick="changeColor()">Tuggle Background
+    </a>
     <!-- Portfolio -->
-    <div class="container s12" id="container">
+    <div class="container s12" id="portfolioContainer">
         <div class="col s6">
             <h1>Portfolio</h1>
             <blockquote><h4>Get To Know Me!</h4></blockquote>
@@ -98,6 +100,24 @@
     <script src="main.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        const fullBody = document.querySelector('body');
+        let bc;
+
+        const changeColor = () => {
+            if(bc !== 1){
+                fullBody.style.backgroundColor = '#1B5E57';
+                fullBody.style.color = '#F1F5F8';
+                return bc = 1;
+            }else{
+                fullBody.style.backgroundColor = 'white';
+                fullBody.style.color = '#333';
+                return bc = 0;
+            }
+            console.log('Tuggled');
+        }
+    </script>
     
 </body>
 </html>
